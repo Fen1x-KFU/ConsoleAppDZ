@@ -76,3 +76,15 @@ class Program
                             //Преобразуйте входную строку: строчные буквы замените на заглавные, заглавные – на
                             //строчные.
 using System;
+
+Console.WriteLine("Введите строку, чтобы буквы поменяли свой регистр");
+string strVal = Console.ReadLine();
+for (int i = 0; i < strVal.Length; i++)
+{
+    if (char.IsLower(strVal[i]))
+        Console.Write(char.ToUpper(strVal[i]));
+    else if (char.IsUpper(stringVar[i]))
+        Console.Write(char.ToLower(strVal[i]));
+    else
+        Console.Write(strVal[i]);
+}
